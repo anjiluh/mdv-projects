@@ -1,0 +1,51 @@
+/* 	Angela Waters
+	VFW 1206
+	Project 4
+*/
+
+body{
+	background-color: gray;
+}
+h1{
+    border: 6px solid black;
+    padding: 10px 15px;
+    background-color: #666;
+    background-color: rgba(0,0,0,0.5);
+    font-weight: bold;
+    font-family: Verdana, Helvetica, "Times New Roman", Times;
+    color: white;
+    text-align: center;
+ 
+}
+legend{
+	font-weight: bold;
+	font-size: x-large;
+}
+fieldset{
+	border: 6px solid black;
+	background-color: #666;
+	color: white;
+	padding: 10px 15px;
+	font-family: Verdana, Helvetica, "Times New Roman", Times;
+	
+}
+p{
+    margin: 10px 5px;
+    text-align: center;
+    font-size: 18px;
+}
+
+h2{
+    font-size: 20px;
+    text-align: center;
+}
+
+a{
+    font-size: 26px;
+    font-weight: bold;
+    color: blue;
+	text-align: center;
+}
+a:hover{
+	color: navy;
+}
