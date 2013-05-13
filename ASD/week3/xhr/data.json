@@ -1,0 +1,114 @@
+{
+    "contacts": [
+            {
+                "fname": [
+                    "First Name: ",
+                    "Angela"
+                ],
+                "lname": [
+                    "Last Name: ",
+                    "Waters"
+                ],
+                "cat": [
+                    "Category: ",
+                    "Adult"
+                ],
+                "email": [
+                    "E-mail: ",
+                    "Angela@awesome.com"
+                ],
+                "favorite": [
+                    "First Time Visitor? ",
+                    "No"
+                ]
+            },
+           {
+                "fname": [
+                    "First Name: ",
+                    "Johnny"
+                ],
+                "lname": [
+                    "Last Name: ",
+                    "Caraveo"
+                ],
+                "cat": [
+                    "Category: ",
+                    "Adult"
+                ],
+                "email": [
+                    "E-mail: ",
+                    "John@awesome.com"
+                ],
+                "favorite": [
+                    "First Time Visitor? ",
+                    "No"
+                ]
+            },
+            {
+                "fname": [
+                    "First Name: ",
+                    "Jeff"
+                ],
+                "lname": [
+                    "Last Name: ",
+                    "Mitsou"
+                ],
+                "cat": [
+                    "Category: ",
+                    "Adult"
+                ],
+                "email": [
+                    "E-mail: ",
+                    "Jeff@awesome.com"
+                ],
+                "favorite": [
+                    "First Time Visitor? ",
+                    "No"
+                ]
+            },
+            {
+                "fname": [
+                    "First Name: ",
+                    "Eric"
+                ],
+                "lname": [
+                    "Last Name: ",
+                    "Ringer"
+                ],
+                "cat": [
+                    "Category: ",
+                    "Adult"
+                ],
+                "email": [
+                    "E-mail: ",
+                    "Eric@awesome.com"
+                ],
+                "favorite": [
+                    "First Time Visitor? ",
+                    "No"
+                ]
+            },
+            {
+                "fname": [
+                    "First Name: ",
+                    "Nate"
+                ],
+                "lname": [
+                    "LastName: ",
+                    "Wan"
+                ],
+                "cat": [
+                    "Category: ",
+                    "Adult"
+                ],
+                "email": [
+                    "E-mail: ",
+                    "Nate@awesome.com"
+                ],
+                "favorite": [
+                    "FirstTimeVisitor?",
+                    "No"
+                ]
+            }
+    ]
+}

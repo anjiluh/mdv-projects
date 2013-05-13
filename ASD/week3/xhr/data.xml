@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contactInfos>
+	
+	<contactInfo>
+		<fname>Angela</fname>
+		<lname>Waters</lname>
+		<cat>Adult</cat>
+		<email>angie@fullsail.com</email>
+		<favorite>No</favorite>
+	</contactInfo>
+	
+	<contactInfo>
+		<fname>Bekah</fname>
+		<lname>Bost</lname>
+		<cat>Youth</cat>
+		<email>bekah@cool.com</email>
+		<favorite>No</favorite>
+	</contactInfo>	
+	
+	<contactInfo>
+		<fname>Jared</fname>
+		<lname>Bost</lname>
+		<cat>Youth</cat>
+		<email>jared@boss.com</email>
+		<favorite>No</favorite>
+	</contactInfo>
+	
+	<contactInfo>
+		<fname>Michael</fname>
+		<lname>Bost</lname>
+		<cat>Adult</cat>
+		<email>michael@neat.com</email>
+		<favorite>No</favorite>
+	</contactInfo>
+	
+	<contactInfo>
+		<fname>Bonnie</fname>
+		<lname>Bost</lname>
+		<cat>Adult</cat>
+		<email>bonnie@sweet.com</email>
+		<favorite>No</favorite>
+	</contactInfo>
+	
+	<contactInfo>
+		<fname>Johnny</fname>
+		<lname>Caraveo</lname>
+		<cat>Adult</cat>
+		<email>johnny@rocket.com</email>
+		<favorite>Yes</favorite>
+	</contactInfo>
+	
+</contactInfos>	

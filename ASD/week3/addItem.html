@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!-- Angela Waters -->
+<!-- VFW 1206 -->
+<!-- My First App of Sweetness -->
+<!-- www.github.com/anjiluh/waters_angela_assignment1 -->
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name ="description" content = "Assignment 1, Visual Frameworks" />
+		<meta name="keywords" content= "html, visual frameworks, full sail, angela waters"/>
+		<meta name="robots" content= "index, follow"/>
+		<meta name="viewport" content="user-scalable=yes, width=device-width"/>
+		<meta name="viewport" content="target-densitydpi=device-dpi"/>
+		<meta name="HandheldFriendly" content="True"/>
+		<meta name="MobileOptimized" content="320"/>
+		<title>Waters, Angela Assignment 1, Visual Frameworks</title>	
+		<link rel="stylesheet" href="css/styles.css" type="text/css" />
+	</head>
+	<body>
+		<header><h1>Check In</h1></header>
+		<ul id="errors"></ul>
+		<nav>
+			<button href="#" id="clear">
+				<a> Clear All</a>
+			</button>
+			<button href="#" id="displayData">
+				<a>Display Data</a>
+			</button>
+			<button href="addItem.html" id="addNew" style="display:none">
+				<a>Add New Item</a>
+			</button>	
+		</nav>		
+		<form action="#" method="post" id="artistInfo">
+			<fieldset id="artistInfo">
+				<legend> Your Info </legend>
+				<ul id="questions">
+					<li>
+						<label for="fname">First Name</label><input type="text" id="fname" />
+					</li>	
+					<li>
+						<label for="lname">Last Name</label><input type="text" id="lname" />
+					</li>
+					<li id="select">	
+						<label for="genre">Category:</label>
+					</li>	
+					<li>
+						<label for="bdate">Birthday:</label>
+						<input name="date" type="date" value="yyyy-mm-dd" id="bdate"/>
+					</li>	
+					<li>
+						<label for="location">Street Address:</label>
+						<input name="location" type="text" id="location" />
+					</li>
+					<li>
+						<label for="city">City:</label>
+						<input name="city" type="text" id="city" />
+					</li>
+					<li>
+						<label for="state">State:</label>
+						<input name="state" type="text" id="state" />
+					</li>
+					<li>
+						<label for="zip">Zip Code:</label>
+						<input name="zip" type="text" id="zip" />
+					</li>
+					<li>
+						<label for="email">E-mail:</label>
+						<input name="email" type="text" id="email" />
+					</li>
+					<li>
+						<label for="phone">Phone Number:</label>
+						<input name="phone" type="text" id="phone" />
+					</li>
+					
+					<li>
+						<label for="size">Size of Family:</label>
+						<input type = "range" min="0" value = "0" onchange = "showNumber(this.value)" />
+						<span id ="size">0</span>
+						<script type="text/javascript">
+							function showNumber(newNumber){
+								document.getElementById("size").innerHTML = newNumber;
+							}
+						</script>	
+					</li>
+					<li>
+						<label for="notes">Prayer Request:</label>
+							<textarea id="notes"></textarea>
+					</li>
+						<input type="checkbox" id="fav" value="Yes" class="checkbox"/>
+						<input type="hidden" value="true"/>
+				<label for="fav">First Time Guest?</label>	
+				</ul>
+			</fieldset>
+			<input type="button" value="Submit" id="submit" />
+		</form>	
+		<script type="text/javascript" src="js/json.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,526 @@
+<!doctype html>  
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	
+	<title>Convergence</title>
+	
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on">
+	
+	<!-- StyleSheets under here -->
+	<link rel="stylesheet" href="css/themes/my-custom-theme.css" />
+<!--	<link rel="stylesheet" href="css/themes/my-custom-theme.min.css" /> -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+<!--	<link rel="stylesheet" href="css/style.css" -->
+	
+	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+<!--  	<script src="js/libs/modernizr.custom.min.js"></script> -->
+
+
+</head>
+<body>
+
+<!--Home Page-->
+	<div data-role="page" id="home">
+  
+	
+		<div data-role="header" data-theme="c">
+			<img border="0" src="img/logo.gif" style="float:left; display:inline"/>
+			
+			<h1>Convergence</h1>
+			
+		</div><!-- /header -->
+ 
+		<div data-role="content" data-theme="a">
+				<a href="#checkIn"></a>
+				<center>
+				<img src="newCTA.jpg" />
+				</center>
+				
+				
+			<p><a href="#checkIn" data-ajax="false" data-role="button" data-icon="arrow-r" data-iconpos="right"data-theme="c">Check In</a></p>
+			
+		<div data-role="content" class = "ui-body-a">
+			<ul id="contactList" data-role="listview"></ul>
+		</div>
+		<div>
+			<input type="displayLink" value="displayLink" id="displayLink" />
+			<center><a href="displayLink" value="displayLink" id="displayLink">Display Saved</a></center>
+		</div>
+		
+		
+		<div id="contactInfos"> </div>
+			
+<!--		<ul data-role="listview" data-inset="true" data-theme="c" >
+			<li data-role="list-divider">Browse By Ministry</li>
+			<li><a href="#children">Children</a></li>
+			<li><a href="#youth" >Youth</a></li>
+			<li><a href="#community" >Community Outreach</a></li>
+		</ul>		
+		</div> <!--content-->
+
+		
+		<div data-role="footer" data-position="fixed"  data-id="nav">
+		<div data-role="navbar">
+			<ul>
+			<li><a href="#home" data-icon="home">Home</a></li>
+			<li><a href="#about" data-icon="gear">About</a></li>
+			<li><a href="#contactList" data-icon="grid">NewsStream</a></li>
+			</ul>
+		</div>
+		</div>
+		</div>
+	</div>
+<!-- About Page -->
+	<div data-role="page" id="about">
+	
+		<div data-role="header" data-position="fixed" data-theme="c">
+			<img border="0" src="img/logo.gif" style="float:left; display:inline"/>
+			<h1>About</h1>
+		</div>
+		
+		<div data-role="content" data-theme="a">
+				
+		<ul data-role="listview" data-inset="true" data-theme="c">
+			<li data-role="list-divider">Where are we?</li>
+			<li>5991 Rockfish Rd, Hope Mills, NC 28348</li>
+			<img src="img/located.jpg"/>
+			
+			<li data-role="list-divider" data-theme="c">Links to Normal Site</li>
+			<li><a href="http://www.theconvergencenc.com">Full Website</a></li>
+			
+			<li><a href="http://freedomsfire.podomatic.com" data-theme="c">Podcast</a></li>
+			
+		</ul>		
+		</div>
+		
+		
+		<div data-role="footer" data-position="fixed"  data-id="nav">
+		<div data-role="navbar">
+			<ul>
+			<li><a href="#home" data-icon="home">Home</a></li>
+			<li><a href="#about" data-icon="gear">About</a></li>
+			<li><a href="#newsStream" data-icon="grid">NewsStream</a></li>
+			</ul>
+		</div>
+		</div>
+		</div>
+	</div>
+<!-- NewsStream Page -->
+		<div data-role="page" id="newsStream">
+	
+	<div data-role="header" data-position="fixed" data-theme="c">
+		<img border="0" src="img/logo.gif" style="float:left; display:inline"/>
+			<h1>Upcoming Events</h1>
+		</div>
+		
+		<div data-role="content" data-theme="a">
+		
+		<div data-role="collapsible" data-collapsed="true" data-theme="c">
+			<h3>August 17, 2012</h3>
+			<p>Visit Covenant Love</p>
+		</div>	
+				
+		<div data-role="collapsible" data-collapsed="true" data-theme="c">
+			<h3>August 05, 2012</h3>
+			<p>Cookout at Park</p>
+		</div>			
+		
+		<div data-role="collapsible" data-collapsed="true" data-theme="c">
+			<h3>August 1, 2012</h3>
+			<p>Freedom Church will visit</p>
+		</div>	
+		
+		
+		</div>
+		
+		
+		<div data-role="footer" data-position="fixed"  data-id="nav">
+		<div data-role="navbar">
+			<ul>
+			<li><a href="#home" data-icon="home">Home</a></li>
+			<li><a href="#about" data-icon="gear">About</a></li>
+			<li><a href="#newsStream" data-icon="grid">NewsStream</a></li>
+			</ul>
+		</div>
+		</div>
+		</div>
+	</div>
+<!--Children Page -->
+	<div data-role="page" id="children">
+	
+	<div data-role="header" data-position="fixed" data-theme="c">
+		<img border="0" src="img/logo.gif" style="float:left; display:inline"/>
+			<h1>Children</h1>
+		</div>
+	
+	<div data-role="content" data-theme="a">
+			<ul data-role="listview" data-inset="true" data-theme="c" >
+				<li href="children.html">
+						<img src="img/child.jpg"/>
+						<h3>Children</h3>
+						<p>Build Up Our Kids</p>	
+				</li>
+		
+			</ul>	
+		</div>
+		
+		<div data-role="footer" data-position="fixed"  data-id="nav">		
+	<div data-role="navbar">
+			<ul>
+			<li><a href="#home" data-icon="home">Home</a></li>
+			<li><a href="#about" data-icon="gear">About</a></li>
+			<li><a href="#newsStream" data-icon="grid">NewsStream</a></li>
+			</ul>
+		</div>
+		</div>
+		</div>
+	</div>
+<!--youth Page -->
+	<div data-role="page" id="youth">
+	
+	<div data-role="header" data-position="fixed" data-theme="c">
+		<img border="0" src="img/logo.gif" style="float:left; display:inline"/>
+			<h1>Youth</h1>
+		</div>
+	
+	<div data-role="content" data-theme="a">
+			<ul data-role="listview" data-inset="true"data-theme="c">
+				<li href="youth.html">
+						<img src="img/youth.jpg">
+						<h3>Youth</h3>
+						<p>Youth words</p>
+				</li>
+		
+			</ul>	
+		</div>
+		
+		<div data-role="footer" data-position="fixed"  data-id="nav">		
+	<div data-role="navbar">
+			<ul>
+			<li><a href="#home" data-icon="home">Home</a></li>
+			<li><a href="#about" data-icon="gear">About</a></li>
+			<li><a href="#newsStream" data-icon="grid">NewsStream</a></li>
+			</ul>
+		</div>
+		</div>
+		</div>
+	</div>	
+	
+<!--community Page -->
+	<div data-role="page" id="community">
+	
+	<div data-role="header" data-position="fixed" data-theme="c">
+	<img border="0" src="img/logo.gif" style="float:left; display:inline"/>
+			<h1>Community Outreach</h1>
+		</div>
+	
+	<div data-role="content" data-theme="a">
+			<ul data-role="listview" data-inset="true" data-theme="c">
+				<li href="community.html">
+						<img src="img/adult.jpg">
+						<h3>Community</h3>
+						<p>Wreck Lives of Community</p>
+					
+				</li>
+			</ul>	
+		</div>
+		
+		<div data-role="footer" data-position="fixed"  data-id="nav">		
+	<div data-role="navbar">
+			<ul>
+			<li><a href="#home" data-icon="home">Home</a></li>
+			<li><a href="#about" data-icon="gear">About</a></li>
+			<li><a href="#newsStream" data-icon="grid">NewsStream</a></li>
+			</ul>
+		</div>
+		</div>
+		</div>
+	</div>		
+<!--Check In Page-->
+	<div data-role="page" id="checkIn" data-add-back-btn="true">
+	
+	<div data-role="header" data-position="fixed" data-theme="c">
+		<img border="0" src="img/logo.gif" style="float:left; display:inline"/>
+		<h1>Check In</h1>
+	</div>
+	
+	<div data-role="content" data-theme="a">
+		<form action="" id="checkInForm">	
+		
+		<h5>All * are required fields</h5>
+			
+		<div data-role="fieldcontain" data-theme="c">	
+			<label for="fname">* First Name:</label>
+			<input type="text" name="fname" id="fname" class="required" data-theme="c"/>
+		</div>
+		
+		<div data-role="fieldcontain">	
+			<label for="lname">* Last Name:</label>
+			<input type="text" name="lname" id="lname" class="required" data-theme="c"/>
+		</div>
+		
+		<div data-role="fieldcontain">
+			<fieldset data-role="controlgroup">
+				<legend>* Category:</legend>
+				<input type="radio" value="adult1" name="cat" id="adult" class="required" data-theme="c"/>
+				<label for="adult">Adult</label>
+				<input type="radio" value="child2" name="cat" id="child" data-theme="c"/>
+				<label for="child">Child</label>
+				<input type="radio" value="youth3" name="cat" id="youth" data-theme="c"/>
+				<label for="youth">Youth</label>
+			</fieldset>	
+		</div>	
+<!--Birthday??-->
+
+	<div data-role="fieldcontain">
+		<fieldset data-role="controlgroup" data-type="horizontal" id="bdate" data-theme="c">
+			<legend>Date of Birth:</legend>
+			<select name="month" id="month" data-theme="c">
+				<option>Aug</option>
+				<option value="jan">Jan</option>
+				<option value="feb">Feb</option>
+				<option value="mar">Mar</option>
+				<option value="apr">Apr</option>
+				<option value="may">May</option>
+				<option value="jun">Jun</option>
+				<option value="jul">Jul</option>
+				<option value="aug">Aug</option>
+				<option value="sep">Sep</option>
+				<option value="oct">Oct</option>
+				<option value="nov">Nov</option>
+				<option value="dec">Dec</option>
+			</select>
+
+			<select name="select-choice-day" id="select-choice-day" data-theme="c">
+				<option>16</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+				<option value="13">13</option>
+				<option value="14">14</option>
+				<option value="15">15</option>
+				<option value="16">16</option>
+				<option value="17">17</option>
+				<option value="18">18</option>
+				<option value="19">19</option>
+				<option value="20">20</option>
+				<option value="21">21</option>
+				<option value="22">22</option>
+				<option value="23">23</option>
+				<option value="24">24</option>
+				<option value="25">25</option>
+				<option value="26">26</option>
+				<option value="27">27</option>
+				<option value="28">28</option>
+				<option value="29">29</option>
+				<option value="30">30</option>
+				<option value="31">31</option>
+<!-- etc. -->
+			</select>
+
+			<select name="select-choice-year" id="select-choice-year" data-theme="c">
+				<option>2012</option>
+				<option value="2011">2011</option>
+				<option value="2010">2010</option>
+				<option value="2009">2009</option>
+				<option value="2008">2008</option>
+				<option value="2007">2007</option>
+				<option value="2006">2006</option>
+				<option value="2005">2005</option>
+				<option value="2004">2004</option>
+				<option value="2003">2003</option>
+				<option value="2002">2002</option>
+				<option value="2001">2001</option>
+				<option value="2000">2000</option>
+				<option value="1999">1999</option>
+				<option value="1998">1998</option>
+				<option value="1997">1997</option>
+				<option value="1996">1996</option>
+				<option value="1995">1995</option>
+				<option value="1994">1994</option>
+				<option value="1993">1993</option>
+				<option value="1992">1992</option>
+				<option value="1991">1991</option>
+				<option value="1990">1990</option>
+				<option value="1989">1989</option>
+				<option value="1987">1987</option>
+				<option value="1986">1986</option>
+				<option value="1986">1985</option>
+				<option value="1984">1984</option>
+				<option value="1983">1983</option>
+				<option value="1982">1982</option>
+				<option value="1981">1981</option>
+				<option value="1980">1980</option>
+			</select>
+		</fieldset>
+	</div>
+	
+		<div data-role="fieldcontain">
+			<label for="size">Size of Family</label>
+			<input type="range" name="size" id="size" value="1" min="1" max="15" data-theme="c"/>
+		</div>
+		
+		<div data-role="fieldcontain">
+			<label for="location">Street Address</label>
+			<input type="text" name="location" id="location" placeholder="123 Main St" data-theme="c"/>
+		</div>
+		
+		<div data-role="fieldcontain">
+			<label for="city">City</label>
+			<input type="text" name="city" id="city" placeholder="Fayetteville" data-theme="c"/>
+		</div>				
+		
+		<div data-role="fieldcontain">
+			<label for="state">State</label>
+			<select name="state" id="state" data-theme="c">
+				<option>NC</option>
+				<option value="AL">AL</option>
+				<option value="AK">AK</option>
+				<option value="AS">AS</option>
+				<option value="AZ">AZ</option>
+				<option value="AR">AR</option>
+				<option value="CA">CA</option>
+				<option value="CO">CO</option>
+				<option value="CT">CT</option>
+				<option value="DE">DE</option>
+				<option value="DC">DC</option>
+				<option value="FL">FL</option>
+				<option value="GA">GA</option>
+				<option value="HI">HI</option>
+				<option value="ID">1D</option>
+				<option value="IL">IL</option>
+				<option value="IN">IN</option>
+				<option value="IA">IA</option>
+				<option value="KS">KS</option>
+				<option value="KY">KY</option>
+				<option value="LA">LA</option>
+				<option value="ME">ME</option>
+				<option value="MH">MH</option>
+				<option value="MD">MD</option>
+				<option value="MA">MA</option>
+				<option value="MI">MI</option>
+				<option value="MN">MN</option>
+				<option value="MS">MS</option>
+				<option value="MO">MO</option>
+				<option value="MT">MT</option>
+				<option value="NE">NE</option>
+				<option value="NV">NV</option>
+				<option value="NH">NH</option>
+				<option value="NJ">NJ</option>
+				<option value="NM">NM</option>
+				<option value="NY">NY</option>
+				<option value="NY">NY</option>
+				<option value="NC">NC</option>
+				<option value="ND">ND</option>
+				<option value="MP">MP</option>
+				<option value="OH">OH</option>
+				<option value="OK">OK</option>
+				<option value="OR">OR</option>
+				<option value="PA">PA</option>
+				<option value="RI">RI</option>
+				<option value="SC">SC</option>
+				<option value="SD">SD</option>
+				<option value="TN">TN</option>
+				<option value="UT">TX</option>
+				<option value="VT">VT</option>
+				<option value="VI">VI</option>
+				<option value="VA">VA</option>
+				<option value="WA">WA</option>
+				<option value="WV">WV</option>
+				<option value="WI">WI</option>
+				<option value="WY">WY</option>
+			</select>
+		</div>			
+				
+		<div data-role="fieldcontain">
+			<label for="zip">Zip Code:</label>
+			<input type="text" name="zip" id="zip" placeholder="28399" data-theme="c"/>
+		</div>	
+		
+		<div data-role="fieldcontain">
+			<label for="email">* E-mail</label>
+			<input type="text" name="email" id="email" class="required email" placeholder="bob@yahoo.com" data-theme="c"/>
+		</div>	
+		
+		<div data-role="fieldcontain">
+			<label for="phone">Phone Number:</label>
+			<input type="text" name="phone" id="phone" placeholder="910-999-9999" data-theme="c"/>
+		</div>	
+				
+		<div data-role="fieldcontain" data-theme="c">
+			<label for="notes" data-theme="c">Prayer Request:</label>
+			<textarea data-theme="c"></textarea>
+		</div>
+
+		<div data-role="fieldcontain">
+			<label for="favorite" data-theme="c">* First Time Guest?</label>
+			<select data-role="slider" id="favorite" data-theme="c">
+				<option value="off" data-theme="c">No</option>
+				<option value="on" data-theme="c">Yes</option>
+			</select>	
+		</div>
+		
+		<div>
+			<input type="submit" value="Submit" id="submit" data-theme="b"/>
+			<center><a href="reset" value="Reset" id="clearLink">Clear</a></center>
+		</div>
+			
+<!--  	<div>
+			<input type="displayLink" value="displayLink" id="displayLink" />
+			<center><a href="displayLink" value="displayLink" id="displayLink">Display Saved</a></center>
+		</div>	-->	
+		</form>
+	</div>	
+	
+<!--Listview page UNDER CONSTRUCTION-->
+	<div data-role="content" id="savedData">
+		<h3>Your Info</h3>
+			<ul id="" data-role="listview">
+				<li></li>
+			</ul>
+	</div>			
+	
+<!--Error Page-->
+
+	<div data-role="dialog" id="checkInErrors" >
+	
+		<div data-role="header" data-position="fixed" data-theme="c">
+			<h1>Missing Fields</h1>
+		</div>	
+	
+	<div data-role="content">
+		<ul>
+			<li>test</li>
+		</ul>
+	</div>
+	
+	</div>
+	
+</div>
+	<!-- JavaScript under here -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+	<script src="jquery.couch.js"></script>
+	<script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+	
+
+</body>
+</html>
