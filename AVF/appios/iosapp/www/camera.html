@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+  
+    <title>Camera</title>
+    
+     <div>
+ 
+        	<img src="img/logo.png" alt="The Convergence"/>
+            <h1>Camera</h1>
+        	
+        </div>
+
+    <script type="text/javascript" charset="utf-8" src="cordova-2.2.0.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/index.js"></script>
+  
+  <body>
+    <a onclick="capturePhoto();">Capture Photo</a> <br>
+    <a onclick="capturePhotoEdit();">Capture Editable Photo</a> <br>
+    <a onclick="getPhoto(pictureSource.PHOTOLIBRARY);">From Photo Library</a><br>
+    <a onclick="getPhoto(pictureSource.SAVEDPHOTOALBUM);">From Photo Album</a><br>
+    <img style="display:none;width:60px;height:60px;" id="smallImage" src="#" />
+    <img style="display:none;" id="largeImage" src="" />
+  </body>
+</html>

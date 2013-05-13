@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+
+    <title>Globalization</title>
+     <div class="app">
+        	<header>
+        	<img src="img/logo.png" alt="The Convergence"/>
+            <h1>Globalization(Time Zone)</h1>
+              <a onClick="checkLocale();">Check Local Time Zone</a>  
+                
+        	</header>
+        </div>
+    <script type="text/javascript" charset="utf-8" src="cordova-2.2.0.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/index.js">
+
+    function checkLocale() {
+      navigator.globalization.getLocaleName(
+        function (locale) {alert('locale: ' + locale.value + '\n');},
+        function () {alert('Error getting locale\n');}
+      );
+    }
+    </script>
+  
+  <body>
+   
+  </body>
+</html>
